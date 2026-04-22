@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .title {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!--<h1 id="titleText" class="">Hello World</h1>-->
+        <!--<div id="greetings">Abc1234</div>-->
+        <!--<button onclick="changeColor()">This Will Change Color</button>-->
+        <!--<button id="changeBtn">This Will Change Color</button>-->
+        <!--<button id="hideBtn" onclick="hideElement()">Hide Element</button>-->
+        <input type="text" id="todo" />
+        <button onclick="addElement()">Add Element</button>
+        <div id="results"></div>
+        <script src="script.js"></script>
+        <script>
+            fetch("https://jsonplaceholder.typicode.com/todos")
+                .then((response) => response.json())
+                .then((json) => {
+                    let result = document.getElementById("results")
+                    console.log(json)
+                    console.log(json.length)
+                    for (let i = 0; i < json.length; i++) {
+                        let newElement = document.createElement("p")
+                        newElement.innerHTML = json[i].title
+                        result.appendChild(newElement)
+                    }
+                    // json.forEach((element) => {
+                    //     let newElement = document.createElement("p")
+                    //     newElement.innerHTML = element.title
+                    //     result.appendChild(newElement)
+                    // })
+                })
+            function addElement() {
+                let inp = document.getElementById("todo").value
+                let newElement = document.createElement("p")
+                newElement.innerHTML = inp
+                let result = document.getElementById("results")
+                result.appendChild(newElement)
+                document.getElementById("todo").value = ""
+            }
+        </script>
+        <!--
+        Events
+        ทุกๆ Element สามารถมี Event อะไรบางอย่างได้
+        -->
+        <!--
+        1.เราสามารถสร้าง Element ใหม่ได้แล้ว
+        2.เราจะเพิ่มข้อความลงไปใน Element ใหม่ที่สร้าง
+        3.เราสามารถเรียก Element ที่อยากจะเพิ่มข้อมูลได้แล้ว
+        4.เพิ่มข้อมูลใหม่ลงใน Element ปลายทาง
+        -->
+    </body>
+</html>

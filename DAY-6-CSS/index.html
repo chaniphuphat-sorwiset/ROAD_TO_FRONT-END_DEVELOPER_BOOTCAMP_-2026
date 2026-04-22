@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FEBC#5555</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            h1 {
+                color: purple;
+                font-size: 64px;
+            }
+            /* id -> # */
+            #title {
+                font-weight: 700;
+                font-size: 46px;
+            }
+            /* class -> . */
+            .text-small {
+                font-size: 12px;
+            }
+            .bg-purple {
+                background-color: purple;
+            }
+            .text-yellow {
+                color: yellow;
+            }
+            /*
+            selector {
+                property: value;
+            }
+            */
+            /*
+            Selector
+            tag{}
+            #id{}
+            .class{}
+            */
+            .button {
+                display: inline-block;
+                background-color: #f2f2f2;
+                /* padding: 8px 16px 8px 16px; */
+                padding-left: 16px;
+                padding-right: 16px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 8px;
+                transition: all 0.3s;
+                margin-right: 8px;
+            }
+            .button:hover {
+                background-color: #e5e5e5;
+                cursor: pointer;
+            }
+            .lazada-button {
+                display: inline-block;
+                border-radius: 0 2px 2px 0;
+                padding: 16px 24px;
+                background-color: #f57224;
+            }
+            .lazada-button:hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="button">ข่าวสาร</div>
+        <div class="button">เพลง</div>
+        <div class="button">เกม</div>
+        <div class="button">ไลฟ์สด</div>
+        <div class="lazada-button">ก</div>
+        <h1 id="title">Hello World</h1>
+        <h1 id="title">Hello World</h1>
+        <h1 class="text-small text-yellow bg-purple">Hello World</h1>
+        <h1 class="text-small">Hello World</h1>
+
+        <form action="">
+            <label for="username">Username:</label>
+            <input name="uname" id="username" type="text" />
+            <label for="password">Password:</label>
+            <input name="pass" id="password" type="password" />
+            <label for="email">Email:</label>
+            <input name="em" id="email" type="email" />
+
+            <label for="option1">Option1:</label>
+            <input type="checkbox" name="opt1" id="option1" />
+            <label for="option2">Option2:</label>
+            <input type="checkbox" name="opt2" id="option2" />
+
+            <label for="">Male</label>
+            <input type="radio" name="" id="" />
+            <label for="">Female</label>
+            <input type="radio" name="" id="" />
+            <label for="">Others</label>
+            <input type="radio" name="" id="" />
+
+            <input type="submit" />
+        </form>
+
+        <a target="_blank" href="https://www.facebook.com">Link</a>
+        <a href="about.html">About</a>
+        <!--Anchor-->
+
+        <h1 style="color: red; background-color: blue">This is Heading</h1>
+        <div style="font-size: 100px; color: red; border: 1px solid black">
+            Hello World
+        </div>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Tel</th>
+            </tr>
+            <tr>
+                <td>Thanawat</td>
+                <td>K</td>
+                <td>thanawat.k@borntodev</td>
+                <td>0987654321</td>
+            </tr>
+            <tr>
+                <td>Thanawat</td>
+                <td>K</td>
+                <td>thanawat.k@borntodev</td>
+                <td>0987654321</td>
+            </tr>
+            <tr>
+                <td>Thanawat</td>
+                <td>K</td>
+                <td>thanawat.k@borntodev</td>
+                <td>0987654321</td>
+            </tr>
+        </table>
+
+        <h2>This is Heading</h2>
+        <h3>This is Heading</h3>
+        <h4>This is Heading</h4>
+        <h5>This is Heading</h5>
+        <h6>This is Heading</h6>
+        <p>Hello New</p>
+        <p>Hello World</p>
+        <!--<h1>Hello World</h1>-->
+        <img
+            src="https://images.unsplash.com/photo-1773332598289-ed0444ad1d6f?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="This Picture is about shoe"
+            width="50%"
+            height="50%"
+        />
+
+        <!--Attribute-->
+        <script></script>
+    </body>
+</html>

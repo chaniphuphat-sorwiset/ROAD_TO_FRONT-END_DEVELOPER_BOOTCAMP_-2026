@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>
+            ให้รับข้อมูลผ่านทาง Input คะแนนของผู้เรียนเข้ามาทางคีย์บอร์ด <br />
+            หากได้คะแนนตั้งแต่ 90 คะแนนขึ้นไป จะได้เกรด 4 หากได้คะแนน 80 - 89
+            คะแนน จะได้เกรด 3 <br />
+            หากได้คะแนน 70 - 79 คะแนน จะได้เกรด 2 <br />
+            หากได้คะแนน 60 - 69 คะแนน จะได้เกรด 1 <br />
+            หากได้คะแนนต่ำกว่า 60 คะแนน จะได้เกรด 0 <br />
+            หากรับข้อมูลคะแนนมามากกว่า 100 คะแนน หรือ น้อยกว่า 0
+            ให้แสดงข้อความว่า "Error"
+        </h1>
+        <script>
+            let score = Number(prompt("กรุณากรอกคะแนน"))
+            if (score < 0 || score > 100) {
+                console.log("Error")
+            } else {
+                if (score >= 90) {
+                    console.log(4)
+                } else if (score >= 80) {
+                    console.log(3)
+                } else if (score >= 70) {
+                    console.log(2)
+                } else if (score >= 60) {
+                    console.log(1)
+                } else {
+                    console.log(0)
+                }
+            }
+        </script>
+    </body>
+</html>
