@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                /*grid-template-rows: 100px 500px;*/
+                grid-template-areas:
+                    "header header header"
+                    "menu main right"
+                    "menu footer footer";
+                gap: 8px;
+                /*row-gap: 32px;*/
+                /*column-gap: 4px;*/
+                /*padding: 32px;*/
+                /*justify-content: space-between;*/
+            }
+            .header {
+                grid-area: header;
+                display: grid;
+                grid-template-columns: 100px auto 100px;
+            }
+            .menu {
+                grid-area: menu;
+            }
+            .main {
+                grid-area: main;
+            }
+            .right {
+                grid-area: right;
+            }
+            .footer {
+                grid-area: footer;
+            }
+            .item {
+                background-color: grey;
+                padding: 16px;
+                border: 1px solid black;
+                /*box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);*/
+            }
+            .item-special {
+                /*grid-column: 1 / span 3;*/
+                /*grid-row: 2 / 4;*/
+                grid-area: 1 / 2 / 5 / 6;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item header">
+                <div>
+                    <p>Hamburger</p>
+                    <p>Youtube</p>
+                </div>
+                <input type="text" />
+                <p>Profile</p>
+            </div>
+            <div class="item menu">Menu</div>
+            <div class="item main">Main</div>
+            <div class="item right">Right</div>
+            <div class="item footer">Footer</div>
+        </div>
+    </body>
+</html>

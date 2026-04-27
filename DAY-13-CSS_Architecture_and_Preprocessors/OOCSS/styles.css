@@ -1,0 +1,61 @@
+/* Structure */
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 5px 15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn-medium {
+  padding: 8px 18px;
+  font-size: 18px;
+}
+
+.btn--large {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.btn--jumbo {
+  padding: 12px 24px;
+  font-size: 24px;
+}
+
+/* Skin */
+.btn--primary {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background-color: #2980b9;
+}
+
+.btn--secondary {
+  background-color: #f1c40f;
+  color: #333;
+}
+
+.btn--secondary:hover {
+  background-color: #f39c12;
+}
+
+.btn--third {
+  background-color: #f00;
+  color: #fff;
+}
+
+.btn--third:hover {
+  background-color: #900;
+}
+
+.btn--fourth {
+  background-color: #0f0;
+  color: #fff;
+}
+
+.btn--fourth:hover {
+  background-color: #090;
+}

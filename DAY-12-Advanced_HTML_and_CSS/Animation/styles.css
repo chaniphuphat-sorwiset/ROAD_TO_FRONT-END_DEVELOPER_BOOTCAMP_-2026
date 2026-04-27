@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.square {
+  animation: spin 1s linear infinite;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(0, 0);
+    background-color: red;
+  }
+  50% {
+    transform: translate(0, 90px);
+  }
+  100% {
+    transform: translate(0, 0);
+    background-color: blue;
+  }
+}

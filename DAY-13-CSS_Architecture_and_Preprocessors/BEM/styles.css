@@ -1,0 +1,45 @@
+/* Block: header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3498db;
+  padding: 20px;
+}
+
+/* Element: header__logo */
+.header__logo {
+  color: #fff;
+  font-style: 24px;
+}
+
+/* Element: header__nav */
+.header__nav {
+  display: flex;
+}
+
+/* Element: header__nav-list */
+.header__nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Element: header__nav-item */
+.header__nav-item {
+  margin-right: 10px;
+}
+
+/* Element: header__nav-link */
+.header__nav-link {
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Modifier: header__nav-link--active */
+.header__nav-link--active {
+  background-color: #f1c40f;
+  color: #333;
+}

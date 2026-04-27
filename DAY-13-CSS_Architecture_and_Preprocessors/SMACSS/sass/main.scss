@@ -1,0 +1,16 @@
+$primary-color: #2c3e50;
+$secondary-color: #f39c12;
+
+body {
+  color: $primary-color;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: $secondary-color;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
