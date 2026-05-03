@@ -14,8 +14,8 @@ function App() {
   // const increaseCount = () => {
   //   setCounter(counter + 1)
   // }
-  // const decreaseCount = () => {
-  //   setCounter(counter - 1)
+  // const decreasecount = () => {
+  //   setcounter(counter - 1)
   // }
   return (
     <>
