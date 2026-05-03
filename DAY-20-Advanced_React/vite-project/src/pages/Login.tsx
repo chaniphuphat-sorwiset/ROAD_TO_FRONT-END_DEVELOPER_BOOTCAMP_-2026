@@ -14,11 +14,7 @@ function Login() {
         <label htmlFor="username"></label>
         <input type="text" />
       </form>
-      <Button
-        title="Decrease"
-        color="grey"
-        updateCount={decreaseCount}
-      ></Button>
+      <Button title="Login" color="grey" updateCount={decreaseCount}></Button>
     </div>
   )
 }
